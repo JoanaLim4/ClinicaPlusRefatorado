@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Plus - Médicos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Clínica Plus</h1>
+    <nav>
+      <a href="dashboard.html">Início</a>
+      <a href="pacientes.html">Pacientes</a>
+      <a href="medicos.html">Médicos</a>
+      <a href="consultas.html">Consultas</a>
+      <a href="index.html">Sair</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Cadastro de Médicos</h2>
+    <form id="formMedico" class="formulario">
+      <label>Nome</label>
+      <input type="text" id="nomeMedico" placeholder="Nome do médico">
+
+      <label>CRM</label>
+      <input type="text" id="crmMedico" placeholder="CRM">
+
+      <label>Especialidade</label>
+      <input type="text" id="especialidadeMedico" placeholder="Especialidade">
+
+      <label>E-mail</label>
+      <input type="email" id="emailMedico" placeholder="email@exemplo.com">
+
+      <button type="submit">Salvar Médico</button>
+      <p id="mensagemMedico" class="mensagem"></p>
+    </form>
+
+    <h3>Médicos cadastrados</h3>
+    <table>
+      <thead><tr><th>Nome</th><th>CRM</th><th>Especialidade</th><th>E-mail</th></tr></thead>
+      <tbody id="tabelaMedicos">
+        <tr><td>Dr. João Lima</td><td>12345</td><td>Clínico Geral</td><td>joao@clinicaplus.com</td></tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
