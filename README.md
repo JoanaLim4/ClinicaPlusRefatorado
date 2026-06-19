@@ -31,3 +31,21 @@ find src/main/java -name "*.java" > sources.txt
 javac -d target/classes @sources.txt
 java -cp target/classes clinicaplus.ClinicaPlusRefatorado
 ```
+
+
+## Etapa 7 - Testes JUnit
+
+Nesta etapa foi criado um teste unitário com JUnit para a classe `RegraConsulta`.
+
+Funcionalidades testadas:
+- cálculo da duração da consulta em minutos;
+- validação de horário comercial;
+- lançamento de exceção quando o horário final é anterior ao inicial.
+
+Para executar os testes pelo terminal:
+
+```bash
+mvn test
+```
+
+No NetBeans, abra o projeto Maven, clique com o botão direito no projeto e selecione **Test**.

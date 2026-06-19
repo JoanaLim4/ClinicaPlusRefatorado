@@ -14,6 +14,7 @@ import clinicaplus.service.AutenticacaoService;
 import clinicaplus.service.ConsultaService;
 import clinicaplus.service.MedicoService;
 import clinicaplus.service.PacienteService;
+import clinicaplus.service.RegraConsulta;
 import java.time.LocalDateTime;
 
 public class ClinicaPlusRefatorado {
@@ -38,6 +39,9 @@ public class ClinicaPlusRefatorado {
         System.out.println("Médico cadastrado: " + medicoService.buscarPorCrm("CRM001").orElseThrow());
         System.out.println("Consulta agendada: " + consulta);
         System.out.println("Perfil autenticado: " + perfil);
+        RegraConsulta regraConsulta = new RegraConsulta();
+        long duracao = regraConsulta.calcularDuracaoEmMinutos(consulta.getDataHora(), consulta.getDataHora().plusMinutes(30));
+        System.out.println("Duração calculada da consulta: " + duracao + " minutos");
         System.out.println("Total de pacientes: " + pacienteService.listarTodos().size());
         System.out.println("Total de médicos: " + medicoService.listarTodos().size());
         System.out.println("Total de consultas: " + consultaService.listarTodas().size());
