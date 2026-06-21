@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Consultas</h1>
+    <nav><a href="/dashboard">Voltar</a></nav>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Agendar consulta</h2>
+        <p class="erro" th:text="${erro}"></p>
+        <form method="post" action="/consultas" onsubmit="return validarConsulta()">
+            <input id="cpfPaciente" name="cpfPaciente" placeholder="CPF do paciente" required>
+            <input id="nomePaciente" name="nomePaciente" placeholder="Nome do paciente" required>
+            <input id="crmMedico" name="crmMedico" placeholder="CRM do médico" required>
+            <input id="horario" name="horario" placeholder="Horário HH:mm" required>
+            <button class="botao" type="submit">Agendar</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Consultas cadastradas</h2>
+        <table>
+            <tr><th>Paciente</th><th>Horário</th><th>Médico</th><th>Status</th><th>Ação</th></tr>
+            <tr th:each="c : ${consultas}">
+                <td th:text="${c.nomePaciente}"></td>
+                <td th:text="${c.horario}"></td>
+                <td th:text="${c.crmMedico}"></td>
+                <td th:text="${c.status}"></td>
+                <td>
+                    <form th:action="@{/consultas/{id}/cancelar(id=${c.id})}" method="post">
+                        <button class="botao perigo" type="submit">Cancelar</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </section>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>

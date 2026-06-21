@@ -1,0 +1,15 @@
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/ClinicaPlusApplication.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/controller/ConsultaController.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/controller/HomeController.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/controller/MedicoController.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/controller/PacienteController.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/model/Consulta.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/model/Medico.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/model/Paciente.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/repository/ConsultaRepository.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/repository/MedicoRepository.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/repository/PacienteRepository.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/service/ConsultaService.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/service/MedicoService.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/service/PacienteService.java
+/home/mak/Documentos/Curso/pi/etapa 9/ClinicaPlus_Etapa9/src/main/java/br/com/clinicaplus/service/RegraConsulta.java

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Pacientes</h1>
+    <nav><a href="/dashboard">Voltar</a></nav>
+</header>
+<main class="container">
+    <section class="card">
+        <h2>Novo paciente</h2>
+        <form method="post" action="/pacientes" onsubmit="return validarPaciente()">
+            <input id="cpf" name="cpf" placeholder="CPF" required>
+            <input id="nome" name="nome" placeholder="Nome" required>
+            <input id="telefone" name="telefone" placeholder="Telefone" required>
+            <button class="botao" type="submit">Salvar</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Pacientes cadastrados</h2>
+        <table>
+            <tr><th>CPF</th><th>Nome</th><th>Telefone</th></tr>
+            <tr th:each="p : ${pacientes}">
+                <td th:text="${p.cpf}"></td>
+                <td th:text="${p.nome}"></td>
+                <td th:text="${p.telefone}"></td>
+            </tr>
+        </table>
+    </section>
+</main>
+<script src="/js/script.js"></script>
+</body>
+</html>
